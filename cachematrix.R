@@ -40,5 +40,10 @@ cacheSolve <- function(x, ...) {
     
     # Computing the inverse matrix
     inv <- solve(data, matrix.indentity)
+    
+    # Storing computed matrix
+    x$setInverse(inv)
+    
+    # Returning computed value
     inv
 }
